@@ -85,7 +85,10 @@ For example, to train the MC-GRA (in `MC-GRA/`) with given all three prior (i.e.
   ``` bash
   python main.py --w1=0.01 --w6=10 --w7=10 --w9=10 --w10=1000 --lr=-2 --useH_A --useY_A --useY --measure=MSELoss --dataset=cora
   ```
-
+这里通过替换成mindspore函数的方式，只转化了gcn模型。但是报错有点多了，还没改完。
+``` bash
+  python mind_main.py --w1=0.01 --w6=10 --w7=10 --w9=10 --w10=1000 --lr=-2 --useH_A --useY_A --useY --measure=MSELoss --dataset=cora
+  ```
 ### MC-GPB
 The full command and hyperparameters for MC-GPB can be found in [MC-GPB commands](MC-GPB/README.md). 
 
